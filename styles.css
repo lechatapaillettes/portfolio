@@ -54,29 +54,34 @@ h2.intro-h2 {
     font-weight: 100;
 }
 
-/* Skills */
-
-section.skills {
-    background-color: #A3A2A3;
-    padding: 50px;
-}
-
-h1.title-skills {
-    font-family: 'Julius Sans One', sans-serif;
-    color: #F7F8F7;
-    font-size: 30px;
-}
-
-/* Principal */
+/* Proyectos */
 
 section.proyectos {
+    background-color: #A3A2A3;
     padding: 50px;
 }
 
 h1.title-proyectos {
     font-family: 'Julius Sans One', sans-serif;
+    color: #F7F8F7;
+    font-size: 30px;
+}
+
+/* Skills */
+
+section.skills {
+    padding: 50px;
+}
+
+h1.title-skills {
+    font-family: 'Julius Sans One', sans-serif;
     color: #312835;
     font-size: 30px;
+}
+
+.tecno {
+    height: 60px;
+    padding: 20px;
 }
 
 /* Contacto */
