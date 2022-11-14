@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #73757C;
+    background-color: #F7F8F7;
+    text-align: center;
+}
+
+/* Header */
+
+.nav {
+    width: 1440px;
+    border-bottom: 1px solid #312835;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: #312835;
+    color: #F7F8F7;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.nav-item {
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+}
+
+/* Principal */
+
+section.principal {
+    padding: 50px;
+}
+
+.img-me {
+    width: 400px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+h1.intro-name {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #312835;
+    font-size: 40px;
+}
+
+h2.intro-h2 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+/* Skills */
+
+section.skills {
+    background-color: #A3A2A3;
+    padding: 50px;
+}
+
+h1.title-skills {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #F7F8F7;
+    font-size: 30px;
+}
+
+/* Principal */
+
+section.proyectos {
+    padding: 50px;
+}
+
+h1.title-proyectos {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #312835;
+    font-size: 30px;
+}
+
+/* Contacto */
+
+section.contacto {
+    background-color: #A3A2A3;
+    padding: 50px;
+}
+
+h1.title-contacto {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #F7F8F7;
+    font-size: 30px;
+}
+
+/* Patitas */
+
+hr.patita-light,
+hr.patita-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 3px;
+    text-align: center;
+    overflow: visible;
+}
+
+hr.patita-light:after,
+hr.patita-primary:after {
+    content: "\f1b0";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.patita-light {
+    border-color: #F7F8F7;
+}
+
+hr.patita-light:after {
+    color: #F7F8F7;
+    background-color: #A3A2A3;
+}
+
+hr.patita-primary {
+    border-color: #312835;
+}
+
+hr.patita-primary:after {
+    color: #312835;
+    background-color: #F7F8F7;
+}
+
+/* Footer */
+
+.footer {
+    padding: 50px 0 50px 0;
+    width: 1440px;
+    background-color: #312835;
+    border-top: 1px solid #312835;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2.title-redes {
+    color: #F7F8F7;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.icon-git,
+.icon-twitter,
+.icon-insta,
+.icon-linkedin {
+    font-size: 20px;
+    width: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    border: 1px solid #57467B;
+    text-align: center;
+    margin: 10px 5px 10px 0;
+    padding: 2px;
+    background-color: #F7F8F7;
+}
+
+.icon-git {
+    color: #6e5494;
+}
+
+.icon-twitter {
+    color: #1DA1F2;
+}
+
+.icon-insta {
+    color: #E1306C;
+}
+
+.icon-linkedin {
+    color: #0077b5;
+}
+
+.copyright {
+    margin-top: 40px;
+}
