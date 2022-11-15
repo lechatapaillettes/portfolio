@@ -12,23 +12,35 @@ body {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Header */
 
 .nav {
-    width: 1440px;
+    width: auto;
     border-bottom: 1px solid #312835;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     background-color: #312835;
-    color: #F7F8F7;
-    font-size: 15px;
-    font-weight: 400;
     text-align: right;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .nav-item {
     list-style: none;
-    display: inline-block;
     padding: 30px;
+}
+
+.nav-link {
+    color: #F7F8F7;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 /* Principal */
@@ -67,6 +79,27 @@ h1.title-proyectos {
     font-size: 30px;
 }
 
+.proyectos-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    min-height: 300px;
+    width: 300px;
+    padding: 20px;
+    margin: 30px;
+    background-color: #F7F8F7;
+    border-radius: 5%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Skills */
 
 section.skills {
@@ -77,6 +110,13 @@ h1.title-skills {
     font-family: 'Julius Sans One', sans-serif;
     color: #312835;
     font-size: 30px;
+}
+
+.logos-tecnos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .tecno {
