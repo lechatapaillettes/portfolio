@@ -16,20 +16,55 @@ a {
     text-decoration: none;
 }
 
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
 /* Header */
 
-.nav {
+nav {
     width: auto;
     border-bottom: 1px solid #312835;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     background-color: #312835;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-language {
+    margin: auto 10px;
+}
+
+.flag {
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid #57467B;
+    margin: 10px;
 }
 
 .nav-list {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
 }
 
 .nav-item {
@@ -137,6 +172,50 @@ h1.title-contacto {
     font-size: 30px;
 }
 
+.form-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form {
+    min-height: 300px;
+    width: 300px;
+    padding: 20px;
+    background-color: #F7F8F7;
+    border-radius: 5%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.inputs {
+    margin: 10px;
+    background-color: #F7F8F7;
+    border: none;
+    border-bottom: solid 1px #57467B;
+    width: 200px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #73757C;
+}
+
+.submit-btn {
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    padding: 12px 30px;
+    margin: 10px 1px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #312835;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
 /* Patitas */
 
 hr.patita-light,
@@ -181,7 +260,7 @@ hr.patita-primary:after {
 
 /* Footer */
 
-.footer {
+footer {
     padding: 50px 0 50px 0;
     width: 1440px;
     background-color: #312835;
