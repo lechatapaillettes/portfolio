@@ -262,7 +262,7 @@ hr.patita-primary:after {
 
 footer {
     padding: 50px 0 50px 0;
-    width: auto;
+    width: 1440px;
     background-color: #312835;
     border-top: 1px solid #312835;
     box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
