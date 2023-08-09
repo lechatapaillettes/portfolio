@@ -14,6 +14,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #F7F8F7;
 }
 
 .material-icons {
@@ -86,6 +87,7 @@ nav {
 .nav-link:hover {
     box-shadow: inset 200px 0 0 0 #F7F8F7;
     color: #312835;
+    
 }
 
 /* Principal */
