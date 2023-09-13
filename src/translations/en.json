@@ -1,0 +1,24 @@
+{
+    "page-title": "Le Chat à Paillettes • Lucía Petit, Frontend Developer",
+    
+    "about-me": "About me",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+
+    "intro-h2": "Frontend Developer",
+    "intro-txt": "I enjoy challenges and learning new things. I live with two cats.",
+
+    "title-proyectos": "Projects",
+    "ListenToMe-txt": "End-of-course project developed using React, Redux, JavaScript, and Tailwind CSS on the frontend, and Node.js, Express, and PostgreSQL on the backend. The design is responsive and includes a dark mode.",
+
+    "title-contacto": "Contact",
+    "placeholder-name": "Name",
+    "placeholder-email": "Email",
+    "placeholder-text": "Tell me about your project...",
+    "submit": "Send",
+
+    "title-redes": "Social media",
+
+    "copyright": "© 2022 LeChatàPaillettes • All rights reserved"
+}
