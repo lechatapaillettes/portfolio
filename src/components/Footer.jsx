@@ -17,12 +17,12 @@ const Footer = ({ language }) => {
         <a href="https://github.com/lechatapaillettes" target="_blank">
           <i className="fa-brands fa-github icon-git"></i>
         </a>
-        <a href="https://twitter.com/chatapaillettes" target="_blank">
+        {/* <a href="https://twitter.com/chatapaillettes" target="_blank">
           <i className="fa-brands fa-twitter icon-twitter"></i>
         </a>
         <a href="https://www.instagram.com/lechatapaillettes/" target="_blank">
           <i className="fa-brands fa-instagram icon-insta"></i>
-        </a>
+        </a> */}
         <a href="https://www.linkedin.com/in/lupetit/" target="_blank">
           <i className="fa-brands fa-linkedin icon-linkedin"></i>
         </a>
