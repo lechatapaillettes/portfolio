@@ -1,5 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import ListenToMe from "../../assets/IMG/PROJECTS/ListenToMe.png";
+
 import es from "../../translations/es.json";
 import fr from "../../translations/fr.json";
 import en from "../../translations/en.json";
@@ -28,9 +31,9 @@ const Projects = ({ language }) => {
 
               <div className="proyectos-titulo">
                 <h4 className="ListenToMe-titulo">Listen To Me</h4>{" "}
-                <a href="https://listen-to-me.fr/" target="_blank">
+                <Link to="https://listen-to-me.fr/" target="_blank">
                   <i className="fa-solid fa-up-right-from-square"></i>
-                </a>
+                </Link>
               </div>
 
               <p className="proyectos-txt">{texts["ListenToMe-txt"]}</p>
