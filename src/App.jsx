@@ -33,10 +33,6 @@ function App() {
       <div className="flex flex-col h-screen">
         <Navbar language={language} changeLanguage={changeLanguage} />
         <Routes>
-          {/* 404 */}
-
-          <Route path="*" element={<NotFound language={language} />} />
-
           {/* Landing page */}
 
           <Route exact path="/" element={<LandingPage language={language} />} />
@@ -44,6 +40,10 @@ function App() {
           {/* Thank You page*/}
 
           <Route exact path="/thankyou" element={<ThankYou />} />
+
+          {/* 404 */}
+
+          <Route path="*" element={<NotFound language={language} />} />
         </Routes>
 
         <Footer language={language} />
