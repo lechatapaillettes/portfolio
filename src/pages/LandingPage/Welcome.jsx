@@ -1,5 +1,7 @@
 import React from "react";
+
 import YO from "../../assets/IMG/YO.jpg";
+
 import es from '../../translations/es.json';
 import fr from '../../translations/fr.json';
 import en from '../../translations/en.json';

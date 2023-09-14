@@ -409,6 +409,88 @@ footer {
   margin-top: 2.5rem;
 }
 
+/* 404 */
+
+.not-found {
+  padding: 3.125rem;
+  margin: 2rem;
+}
+
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.not-found-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.not-found-img-container {
+  max-width: 18rem;
+}
+
+.not-found-img {
+  max-width: 18rem;
+}
+
+.not-found-txt {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.not-found-title {
+  margin-bottom: 2rem;
+}
+
+.not-found-link {
+  color: #312835;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Link animation */
+
+@media only screen and (min-width: 769px) {
+  .not-found-link,
+  .not-found-link:after,
+  .not-found-link:before {
+    transition: all 0.5s;
+  }
+
+  .not-found-link:hover {
+    color: #a3a2a3;
+  }
+
+  .not-found-link {
+    position: relative;
+  }
+
+  .not-found-link:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: #312835;
+    height: 1px;
+  }
+
+  .not-found-link:hover:after {
+    width: 100%;
+  }
+}
+
 /* Responsive */
 
 @media only screen and (max-width: 768px) {
@@ -475,7 +557,9 @@ footer {
   section.principal,
   section.proyectos,
   section.skills,
-  section.contacto {
+  section.contacto,
+  .not-found,
+  .not-found-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -531,6 +615,20 @@ footer {
 
   .copyright {
     margin: 1rem;
+  }
+
+  .not-found {
+    margin: 0;
+    min-height: 77vh;
+  }
+
+  .not-found-img {
+    max-width: 10rem;
+    margin-top: 5rem;
+  }
+
+  .not-found-txt {
+    font-size: 1rem;
   }
 }
 

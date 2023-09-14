@@ -35,7 +35,7 @@ function App() {
         <Routes>
           {/* 404 */}
 
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound language={language} />} />
 
           {/* Landing page */}
 
