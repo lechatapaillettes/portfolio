@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import argentina from "../assets/IMG/IDIOMA/argcopy.png";
 import france from "../assets/IMG/IDIOMA/frcopy.png";
@@ -75,36 +75,40 @@ const Navbar = ({ language, changeLanguage }) => {
         </div>
         <ul className="nav-list">
           <li className="nav-item">
-            <Link
+            <NavLink
               className="nav-link"
+              to="/#principal"
               onClick={(e) => handleNavLinkClick(e, "principal")}
             >
               {texts["about-me"]}
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link
+            <NavLink
               className="nav-link"
+              to="/#proyectos"
               onClick={(e) => handleNavLinkClick(e, "proyectos")}
             >
               {texts["projects"]}
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link
+            <NavLink
               className="nav-link"
+              to="/#skills"
               onClick={(e) => handleNavLinkClick(e, "skills")}
             >
               {texts["skills"]}
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link
+            <NavLink
               className="nav-link"
+              to="/#contacto"
               onClick={(e) => handleNavLinkClick(e, "contacto")}
             >
               {texts["contact"]}
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -125,71 +129,84 @@ const Navbar = ({ language, changeLanguage }) => {
                   title="Español"
                   alt="Español"
                   className="flag"
-                  onClick={() => changeLanguage("es")}
-                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    changeLanguage("es");
+                    closeMenu();
+                  }}
                 />
                 <img
                   src={france}
                   title="Français"
                   alt="Français"
                   className="flag"
-                  onClick={() => changeLanguage("fr")}
-                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    changeLanguage("fr");
+                    closeMenu();
+                  }}
                 />
                 <img
                   src={unitedStates}
                   title="English"
                   alt="English"
                   className="flag"
-                  onClick={() => changeLanguage("en")}
-                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    changeLanguage("en");
+                    closeMenu();
+                  }}
                 />
               </div>
 
               <li className="burger-item">
-                <Link
+                <NavLink
                   className="burger-link"
+                  to="/#principal"
                   onClick={(e) => handleNavLinkClick(e, "principal", closeMenu)}
                 >
                   {texts["about-me"]}
-                </Link>
+                </NavLink>
               </li>
-
               <li className="burger-item">
-                <Link
+                <NavLink
                   className="burger-link"
+                  to="/#proyectos"
                   onClick={(e) => handleNavLinkClick(e, "proyectos", closeMenu)}
                 >
                   {texts["projects"]}
-                </Link>
+                </NavLink>
               </li>
-
               <li className="burger-item">
-                <Link
+                <NavLink
                   className="burger-link"
+                  to="/#skills"
                   onClick={(e) => handleNavLinkClick(e, "skills", closeMenu)}
                 >
                   {texts["skills"]}
-                </Link>
+                </NavLink>
               </li>
-
               <li className="burger-item">
-                <Link
+                <NavLink
                   className="burger-link"
+                  to="/#contacto"
                   onClick={(e) => handleNavLinkClick(e, "contacto", closeMenu)}
                 >
                   {texts["contact"]}
-                </Link>
+                </NavLink>
               </li>
 
               <li className="burger-redes">
-                <Link to="https://github.com/lechatapaillettes" target="_blank">
+                <NavLink
+                  to="https://github.com/lechatapaillettes"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-github icon-git"></i>
-                </Link>
+                </NavLink>
 
-                <Link to="https://www.linkedin.com/in/lupetit/" target="_blank">
+                <NavLink
+                  to="https://www.linkedin.com/in/lupetit/"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-linkedin icon-linkedin"></i>
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </Fade>

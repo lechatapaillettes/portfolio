@@ -39,7 +39,7 @@ function App() {
 
           {/* Thank You page*/}
 
-          <Route exact path="/thankyou" element={<ThankYou />} />
+          <Route exact path="/thankyou" element={<ThankYou language={language} />} />
 
           {/* 404 */}
 

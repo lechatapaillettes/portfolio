@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
-import notFound from "../../assets/IMG/notFound.png";
+import Oli from "../../assets/IMG/Oli.png";
 
 import es from "../../translations/es.json";
 import fr from "../../translations/fr.json";
@@ -19,13 +19,14 @@ const NotFoundPage = ({ language }) => {
       <div className="not-found-container">
         <div className="not-found-content">
           <img
-            src={notFound}
-            alt="404 NOT FOUND"
+            src={Oli}
+            alt="Siamese cat"
             title="404 NOT FOUND"
             className="not-found-img"
           />
           <div className="not-found-txt">
             <h2 className="not-found-title">404</h2>
+            <br />
             <p>{texts["not-found-txt"]}</p>
           </div>
         </div>
@@ -37,6 +38,12 @@ const NotFoundPage = ({ language }) => {
           >
             <p>{texts["not-found-link"]}</p>
           </Link>
+        </div>
+
+        <div className="back">
+          <NavLink to="/" className="back-link">
+            {texts["back-to-main"]}
+          </NavLink>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+
 import es from "../../translations/es.json";
 import fr from "../../translations/fr.json";
 import en from "../../translations/en.json";
@@ -61,7 +62,7 @@ const contact = ({ language }) => {
             <input
               type="hidden"
               name="_next"
-              value="https://lechatapaillettes.vercel.app/thankyou.html"
+              value="https://lechatapaillettes.vercel.app/thankyou"
             />
             <input type="hidden" name="_captcha" value="false" />
           </form>

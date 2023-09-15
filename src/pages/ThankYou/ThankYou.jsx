@@ -1,28 +1,44 @@
-import React from 'react';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-const ThankYou = () => {
-    return (
-        <section id="principal" className="principal">
-            <div className="intro-container">
-                <h2 className="intro-name">¡ Gracias !</h2>
-                <br/>
-                <p className="intro-txt">Recibirás una respuesta lo más rápido posible.</p>
-                <br/>
-                <br/>
-                <hr className="patita-primary"></hr>
-                <h3 className="intro-h2">Merci !</h3>
-                <br/>
-                <br/>
-                <p className="intro-txt">Tu recevras une réponse le plus tôt possible.</p>
-                <br/>
-                <hr className="patita-primary"></hr>
-                <h3 className="intro-h2">Thank You !</h3>
-                <br/>
-                <p className="intro-txt">You will get a response as soon as possible.</p>
+import Oli from "../../assets/IMG/Oli.png";
 
-            </div>
-        </section>
-    );
+import es from "../../translations/es.json";
+import fr from "../../translations/fr.json";
+import en from "../../translations/en.json";
+
+const ThankYou = ({ language }) => {
+  const texts = {
+    es,
+    fr,
+    en,
+  }[language];
+
+  return (
+    <div className="thank-you">
+      <div className="thank-you-container">
+        <div className="thank-you-content">
+          <div className="thank-tou-txt">
+            <h2 className="thank-you-title">{texts["thank-you"]}</h2>
+            <hr className="patita-primary"></hr>
+            <p className="thank-you-txt">{texts["response"]}</p>
+          </div>
+          <img
+            src={Oli}
+            alt="Siamese cat"
+            title="THANK YOU"
+            className="thank-you-img"
+          />
+        </div>
+
+        <div className="back">
+          <NavLink to="/" className="not-found-link">
+            {texts["back-to-main"]}
+          </NavLink>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default ThankYou;
