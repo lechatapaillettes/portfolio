@@ -34,7 +34,7 @@ const Footer = ({ language }) => {
       </div>
 
       <div className="copyright">
-        <p>{texts["copyright"]}</p>
+        <p>© 2024 LeChatàPaillettes • {texts["copyright"]}</p>
       </div>
     </footer>
   );

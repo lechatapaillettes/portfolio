@@ -22,17 +22,19 @@ const contact = ({ language }) => {
             action="https://formsubmit.co/b0583c1e3b4505b7136401b1ac53acec"
             method="POST"
           >
-            <div>
+            <div className="input-container">
               <input
                 type="text"
                 id="name"
                 placeholder={texts["placeholder-name"]}
                 name="nombre"
-                required
+                required minLength={2}
                 className="inputs"
               />
+              <i className="fa-solid fa-check icon-ok"></i>
+              <i className="fa-solid fa-xmark icon-error"></i>
             </div>
-            <div>
+            <div className="input-container">
               <input
                 type="email"
                 id="email"
@@ -41,7 +43,10 @@ const contact = ({ language }) => {
                 required
                 className="inputs"
               />
+              <i className="fa-solid fa-check icon-ok"></i>
+              <i className="fa-solid fa-xmark icon-error"></i>
             </div>
+
             <div>
               <textarea
                 id="text"

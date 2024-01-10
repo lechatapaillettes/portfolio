@@ -10,6 +10,7 @@ import fr from "../translations/fr.json";
 import en from "../translations/en.json";
 
 import { AiOutlineMenu } from "react-icons/ai";
+import { HiOutlineXMark } from "react-icons/hi2";
 import { Fade } from "react-awesome-reveal";
 
 const Navbar = ({ language, changeLanguage }) => {
@@ -33,13 +34,16 @@ const Navbar = ({ language, changeLanguage }) => {
   };
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isXMark, setIsXMark] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    setIsXMark(!isXMark);
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+    setIsXMark(false);
   };
 
   return (
@@ -117,7 +121,20 @@ const Navbar = ({ language, changeLanguage }) => {
 
       <div className="nav-mobile">
         <div className="burger-menu">
-          <AiOutlineMenu className="burger-icon" onClick={toggleMenu} />
+          <div className={`burger-icon-container ${isMenuOpen ? "open" : ""}`}>
+            <HiOutlineXMark
+              className={`burger-icon burger-icon-close ${
+                isMenuOpen ? "" : "burger-icon-hidden"
+              }`}
+              onClick={toggleMenu}
+            />
+            <AiOutlineMenu
+              className={`burger-icon burger-icon-open ${
+                isMenuOpen ? "burger-icon-hidden" : ""
+              }`}
+              onClick={toggleMenu}
+            />
+          </div>
         </div>
 
         {isMenuOpen && (

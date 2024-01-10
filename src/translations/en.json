@@ -7,7 +7,7 @@
     "contact": "Contact",
 
     "intro-h2": "Frontend Developer",
-    "intro-txt": "I enjoy challenges and learning new things. I live with two cats.",
+    "intro-txt": "For several years, I had the privilege of contributing to the enchanting world of Disneyland Paris, where I held various positions related to customer service. After a rewarding period of parental leave, I made the bold decision to pursue my passion for technology and transition into the field of web development. Driven by my insatiable curiosity and desire to learn, I am determined to apply the creativity and determination I have acquired to my new career, where I can continue to create captivating experiences, this time online.",
 
     "title-proyectos": "Projects",
     "ListenToMe-txt": "End-of-course project developed using React, Redux, JavaScript, and Tailwind CSS on the frontend, and Node.js, Express, and PostgreSQL on the backend. The design is responsive and includes a dark mode.",
@@ -27,5 +27,5 @@
     "not-found-txt": "Page not found",
     "not-found-link": "Click here",
 
-    "copyright": "© 2022 LeChatàPaillettes • All rights reserved"
+    "copyright": "All rights reserved"
 }

@@ -149,6 +149,19 @@ section.principal {
   font-weight: 100;
 }
 
+.intro-txt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.intro-txt {
+  max-width: 40%;
+  text-align: justify;
+  text-indent: 2rem;
+}
+
 /* Proyectos */
 
 section.proyectos {
@@ -270,6 +283,10 @@ form {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.input-container {
+  position: relative;
+}
+
 .inputs {
   margin: 0.625rem;
   padding: 0.313rem;
@@ -281,6 +298,30 @@ form {
   font-size: 1rem;
   font-weight: 200;
   color: #73757c;
+}
+
+.icon-ok {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 2.8rem;
+  color: #66ab69;
+  display: none;
+}
+
+.icon-error {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 2.8rem;
+  color: #f44336;
+  display: none;
+}
+
+.input-container input:valid ~ .icon-ok {
+  display: block;
+}
+
+.input-container input:invalid:not(:placeholder-shown) ~ .icon-error {
+  display: block;
 }
 
 textarea {
@@ -558,6 +599,29 @@ footer {
     margin-left: 1rem;
   }
 
+  .burger-icon-close {
+    font-size: 1.5rem;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .burger-icon-open {
+    font-size: 1.2rem;
+    margin-left: -1.35rem;
+  }
+
+  .burger-icon-container {
+    display: flex;
+  }
+  
+  .burger-icon {
+    opacity: 1;
+  }
+  
+  .burger-icon-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
   .burger-open {
     margin-top: 2.9rem;
     right: 0;
@@ -626,6 +690,10 @@ footer {
     margin-bottom: 1.5rem;
   }
 
+  .intro-txt {
+    max-width: 100%;
+  }
+
   .proyecto,
   form {
     margin: 2rem 0;
@@ -666,6 +734,16 @@ footer {
   .thank-you {
     margin: 0;
     min-height: 89vh;
+  }
+
+  /* Form */
+
+  .icon-ok {
+    right: 2rem;
+  }
+  
+  .icon-error {
+    right: 2rem;
   }
 }
 

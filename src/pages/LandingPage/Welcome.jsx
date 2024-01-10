@@ -2,12 +2,11 @@ import React from "react";
 
 import YO from "../../assets/IMG/YO.jpg";
 
-import es from '../../translations/es.json';
-import fr from '../../translations/fr.json';
-import en from '../../translations/en.json';
+import es from "../../translations/es.json";
+import fr from "../../translations/fr.json";
+import en from "../../translations/en.json";
 
 const Welcome = ({ language }) => {
-
   const texts = {
     es,
     fr,
@@ -20,10 +19,10 @@ const Welcome = ({ language }) => {
       <div className="intro-container">
         <h1 className="intro-name">Lucía Petit</h1>
         <hr className="patita-primary"></hr>
-        <h2 className="intro-h2">{texts['intro-h2']}</h2>
-        <p className="intro-txt">
-        {texts['intro-txt']}
-        </p>
+        <h2 className="intro-h2">{texts["intro-h2"]}</h2>
+        <div className="intro-txt-container">
+          <p className="intro-txt">{texts["intro-txt"]}</p>
+        </div>
       </div>
     </section>
   );

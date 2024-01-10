@@ -7,7 +7,7 @@
     "contact": "Contact",
 
     "intro-h2": "Developpeuse Frontend",
-    "intro-txt": "J'aime les défis et apprendre des nouvelles choses. J'habite chez mes deux chats.",
+    "intro-txt": "Pendant de nombreuses années, j'ai eu le privilège de contribuer au monde enchanteur de Disneyland Paris, où j'ai occupé divers postes autour du service client. Après une période enrichissante en congé parental, j'ai pris la décision audacieuse de poursuivre ma passion pour la technologie en me reconvertissant dans le domaine du développement web. Toujours animée par ma curiosité insatiable et mon désir d'apprendre, je suis déterminée à appliquer la créativité et la détermination que j'ai acquises à ma nouvelle carrière, où je peux continuer à créer des expériences captivantes, cette fois-ci en ligne.",
 
     "title-proyectos": "Projets",
     "ListenToMe-txt": "Projet de fin de formation réalisé avec React, Redux, JavaScript et Tailwind CSS côté frontend, et Node.js, Express et PostgreSQL côté backend. Le design est responsive et comporte un mode sombre.",
@@ -27,5 +27,5 @@
     "not-found-txt": "Page non trouvée",
     "not-found-link": "Click ici",
 
-    "copyright": "© 2022 LeChatàPaillettes • Tous droits réservés"
+    "copyright": "Tous droits réservés"
 }
