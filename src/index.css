@@ -601,12 +601,10 @@ footer {
 
   .burger-icon-close {
     font-size: 1.5rem;
-    transition: opacity 0.5s ease-in-out;
   }
 
   .burger-icon-open {
     font-size: 1.2rem;
-    margin-left: -1.35rem;
   }
 
   .burger-icon-container {
@@ -619,7 +617,7 @@ footer {
   
   .burger-icon-hidden {
     opacity: 0;
-    visibility: hidden;
+    display: none;
   }
 
   .burger-open {
