@@ -21,23 +21,24 @@ const Projects = ({ language }) => {
         <hr className="patita-light"></hr>
         <div className="proyectos-boxes">
           <div className="proyecto">
-            <div className="ListenToMe">
-              <img
-                src={ListenToMe}
-                alt="LISTEN TO ME"
-                title="LISTEN TO ME"
-                className="ListenToMe-img"
-              />
-
-              <div className="proyectos-titulo">
-                <h4 className="ListenToMe-titulo">Listen To Me</h4>{" "}
-                <Link to="https://listen-to-me.fr/" target="_blank">
-                  <i className="fa-solid fa-up-right-from-square"></i>
-                </Link>
+          <Link to="https://listen-to-me.fr/" target="_blank">
+              <div className="proyectos-img">
+                <img
+                  src={ListenToMe}
+                  alt="LISTEN TO ME"
+                  title="LISTEN TO ME"
+                  className="ListenToMe-img"
+                />
               </div>
 
-              <p className="proyectos-txt">{texts["ListenToMe-txt"]}</p>
-            </div>
+              <div className="proyectos-info">
+                <div className="proyectos-titulo">
+                  <h4>Listen To Me</h4>
+                  
+                </div>
+                <p className="proyectos-txt">{texts["ListenToMe-txt"]}</p>
+              </div>
+            </Link>
           </div>
 
           {/* <div className="proyecto">2</div>

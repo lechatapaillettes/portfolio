@@ -184,12 +184,12 @@ section.proyectos {
 }
 
 .proyecto {
-  min-height: 18.75rem;
-  width: 18.75rem;
+  min-height: 13rem;
+  width: 20rem;
   padding: 1.25rem;
   margin: 1.875rem;
   background-color: #f7f8f7;
-  border-radius: 5%;
+  border-radius: 1.2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
@@ -201,11 +201,18 @@ section.proyectos {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin: 0.5rem 1rem;
+  color: #73757c;
 }
 
 .proyectos-txt {
   text-align: justify;
   text-indent: 1rem;
+  color: #73757c;
 }
 
 .ListenToMe-img {
@@ -213,20 +220,18 @@ section.proyectos {
   border-radius: 1rem;
 }
 
-.ListenToMe-titulo {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 100;
-  margin: 0.5rem 1rem;
-}
+@media only screen and (min-width: 769px) {
+  .proyectos-info {
+    display: none;
+  }
 
-.fa-up-right-from-square {
-  font-size: 1rem;
-  color: #73757c;
-}
+  .proyecto:hover .proyectos-img {
+    display: none;
+  }
 
-.fa-up-right-from-square:hover {
-  color: #312835;
+  .proyecto:hover .proyectos-info {
+    display: block;
+  }
 }
 
 /* Skills */
@@ -279,7 +284,7 @@ form {
   width: 18.75rem;
   padding: 1.25rem;
   background-color: #f7f8f7;
-  border-radius: 5%;
+  border-radius: 1.2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -610,11 +615,11 @@ footer {
   .burger-icon-container {
     display: flex;
   }
-  
+
   .burger-icon {
     opacity: 1;
   }
-  
+
   .burger-icon-hidden {
     opacity: 0;
     display: none;
@@ -696,6 +701,12 @@ footer {
   form {
     margin: 2rem 0;
     max-width: 17rem;
+    min-height: 18.75rem;
+    border-radius: 5%;
+  }
+
+  .proyectos-info {
+    display: block;
   }
 
   .tecno {
@@ -739,7 +750,7 @@ footer {
   .icon-ok {
     right: 2rem;
   }
-  
+
   .icon-error {
     right: 2rem;
   }
