@@ -34,10 +34,8 @@ const Skills = () => {
                     {/* <img src={firebase} alt="FIREBASE" title="FIREBASE" className="tecno firebase" /> */}
 
                     <img src={tailwind} alt="TAILWIND" title="TAILWIND" className="tecno tailwind" />
-                    
-                    {/* <img src={sass} alt="SASS" title="SASS" className="tecno sass" />
-                    <img src={bootstrap}alt="BOOTSTRAP" title="BOOTSTRAP" className="tecno bootstrap" /> */}
-                    
+                    <img src={sass} alt="SASS" title="SASS" className="tecno sass" />
+                    <img src={bootstrap}alt="BOOTSTRAP" title="BOOTSTRAP" className="tecno bootstrap" />
                     <img src={vsc} alt="VSCODE" title="VSCODE" className="tecno vsc" />
                     <img src={git} alt="GIT" title="GIT" className="tecno git" />
                     <img src={github} alt="GITHUB" title="GITHUB" className="tecno github" />
@@ -45,11 +43,6 @@ const Skills = () => {
                     <img src={responsive} alt="RESPONSIVE DESIGN" title="RESPONSIVE DESIGN"
                     className="tecno responsive" />
 
-                    
-
-                    
-
-                    
                 </div>
             </div>
         </section>
