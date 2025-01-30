@@ -11,6 +11,7 @@
 
     "title-proyectos": "Projets",
     "ListenToMe-txt": "Projet de fin de formation réalisé avec React, Redux, JavaScript et Tailwind CSS côté frontend, et Node.js, Express et PostgreSQL côté backend. Le design est responsive et comporte un mode sombre.",
+    "JuPsychomot-txt": "Site web conçu pour une psychomotricienne qui avait besoin d'une part d'expliquer sa pratique ainsi que ses compétences, et d'un formulaire qui lui permette d'organiser les prises de contact des nouveaux patients.",
 
     "title-contacto": "Contact",
     "placeholder-name": "Nom",
