@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import ListenToMe from "../../assets/IMG/PROJECTS/ListenToMe.png";
-import JuPsychomot from "../../assets/IMG/PROJECTS/JuPsychomot.png"
+import JuPsychomot from "../../assets/IMG/PROJECTS/JuPsychomot.png";
+import EscuchamosJuzgamos from "../../assets/IMG/PROJECTS/EscuchamosJuzgamos.png";
 
 import es from "../../translations/es.json";
 import fr from "../../translations/fr.json";
@@ -41,7 +42,8 @@ const Projects = ({ language }) => {
             </Link>
           </div>
 
-          <div className="proyecto"><Link to="https://julie-psychomot.vercel.app/" target="_blank">
+          <div className="proyecto">
+            <Link to="https://julie-psychomot.vercel.app/" target="_blank">
               <div className="proyectos-img">
                 <img
                   src={JuPsychomot}
@@ -57,10 +59,33 @@ const Projects = ({ language }) => {
                 </div>
                 <p className="proyectos-txt">{texts["JuPsychomot-txt"]}</p>
               </div>
-            </Link></div>
+            </Link>
+          </div>
 
-          {/* <div className="proyecto">3</div>
-                    <div className="proyecto">4</div>
+          <div className="proyecto">
+            {" "}
+            <Link to="https://escuchamosyjuzgamos.vercel.app/" target="_blank">
+              <div className="proyectos-img">
+                <img
+                  src={EscuchamosJuzgamos}
+                  alt="ESCUCHAMOS Y JUZGAMOS"
+                  title="ESCUCHAMOS Y JUZGAMOS"
+                  className="EscuchamosJuzgamos-img"
+                />
+              </div>
+
+              <div className="proyectos-info">
+                <div className="proyectos-titulo">
+                  <h4>Escuchamos y Juzgamos</h4>
+                </div>
+                <p className="proyectos-txt">
+                  {texts["EscuchamosJuzgamos-txt"]}
+                </p>
+              </div>
+            </Link>
+          </div>
+
+          {/* <div className="proyecto">4</div>
                     <div className="proyecto">5</div>
                     <div className="proyecto">6</div> */}
         </div>

@@ -12,6 +12,7 @@
     "title-proyectos": "Proyectos",
     "ListenToMe-txt": "Proyecto de fin de curso realizado con React, Redux, Javascript y Tailwind CSS en el frontend, y NodeJS, Express y postgreSQL en el backend. El diseño es responsivo y posee un darkmode.",
     "JuPsychomot-txt": "Sitio web diseñado para una terapeuta psicomotora que necesitaba explicar su práctica y habilidades, y un formulario que le permitiera organizar el contacto con pacientes nuevos.",
+    "EscuchamosJuzgamos-txt": "Proyecto personal relizado con JavaScript, que recopila reseñas de mis últimas lecturas.",
 
     "title-contacto": "Contacto",
     "placeholder-name": "Nombre",
